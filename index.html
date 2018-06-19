@@ -1,57 +1,92 @@
 
 <html>
 <head>
-<title>Smart Parking System</title>
+<title>
+Choose Your Area
+</title>
 <style>
-h1 {
-    text-align: center;
-    color    :  orange;
-	text-shadow: 3px 2px black;
-	font-size: 60px;
-	font-style: oblique;
-} 
-.button {
-width: 200px;
-height:100px;
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
+
+body{
+height: 200px;
+    background: blue; 
+    background: linear-gradient(white,blue); 
+
+   //  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/abstract-grey-background-with-circles-video-animation-hd-1920x1080_nyqmmdpnx__F0008.png");
+//background-image:url("http://midcloudcomputing.com/wp-content/uploads/2016/08/blue.jpg");
+      //  background-color : rgb(30,20,10);
+//background-image : url("https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F32%2Fb8%2F77%2F32b877ed4aa7778cc7d43ebb7d95a6f1.png&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F676947387709058518%2F&docid=GfhCS9rbrEksIM&tbnid=hMnRmtW8J_GmHM%3A&vet=10ahUKEwjXw_vaod_bAhVKNY8KHb7KBHAQMwg3KAQwBA..i&w=1920&h=1080&bih=662&biw=1366&q=light%20blue%20gradient%20image%201920x1080&ved=0ahUKEwjXw_vaod_bAhVKNY8KHb7KBHAQMwg3KAQwBA&iact=mrc&uact=8.jpg");
+}
+h1{
+color : Lime;
+text-align: center;
+
+text-shadow: 3px 2px black;
+font-size: 60px;
+font-style: oblique;
+}
+
+.test{
+display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-.button:hover {
-background-color: orange
+  color: #FFFFFF;
+  text-align: center;
+  //font-size: 28px;
+  padding: 3px 3px ;
+  height: 100px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
 }
 
-.button:active {
-  background-color: orange
-  box-shadow: 0 5px #123;
-  transform: translateY(4px);
-}
-body {
-     //background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/abstract-grey-background-with-circles-video-animation-hd-1920x1080_nyqmmdpnx__F0008.png");
-     //background-image: url("http://newsbytes.ph/wp-content/uploads/2014/12/Cisco-Transportation-IoE.jpg");
-	background-image: url("http://www.mobiloitte.com/blog/wp-content/uploads/2017/08/smart-parking.png ");
-    //background-image: url(" https://www.infopulse.com/files/images/smart-parking-iot-solution.jpg");
-	 background-image: url("https://www.xtendiot.com/wp-content/uploads/2017/07/smart-parking.jpg");
-margin-top: 32px;
-	 margin-left: 44px;
-     padding: 12px 12px 12px 12px;
-     font-family: Arial; 
-}  
 
+
+.test span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.test span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.test:hover span {
+  padding-right: 25px;
+}
+
+.test:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ 
 </style>
 </head>
 <body>
-<h1>Welcome to Smart Parking system</h1></br></br>
+
+<h1 >Select Your Area to check the Available slots</h1>
 <center>
-<a href='tharunbhupathi.github.io'><button class="button"><h2>Choose your area</button></a>
+<a href='https://durgabalareddy.github.io'><button class="test" ><h2><span>Area1</span></h2></button></a>
+&emsp; &emsp;
+<a href='https://durgabalareddy.github.io'><button class="test" ><h2><span>Area4</span></h2></button></a>
+<br><br>  
+<a href='https://durgabalareddy.github.io'><button class="test" ><h2><span>Area2</span></h2></button></a>
+&emsp; &emsp;
+<a href='https://durgabalareddy.github.io'><button class="test" ><h2><span>Area5</span></h2></button></a>
+<br><br>   
+<a href='https://durgabalareddy.github.io'><button class="test" ><h2><span>Area3</span></h2></button></a>
+&emsp; &emsp;
+<a href='https://durgabalareddy.github.io'><button class="test" ><h2><span>Area6</span></h2></button></a>
+</center>
+
 </body>
 </html>
